@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Inclusive Foods</h1>
+    </header>
+    <input type="checkbox" id="light-switch" class="light-switch" name="light-switch">
+    <label for="light-switch" id="light-label" class="light-switch">Dark Mode</label>
+    
+    <section id="login-section" class="format">
+        <h2>Login</h2>
+        <form id="user-credentials" class="format">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="pwd" placeholder="Password" required>
+            <!-- <p id="login-warning">**Must provide username and login**</p> -->
+        </form>
+        
+        <div id="main-login">
+            <input type="checkbox" class="remember">
+            <label for="remember-me" class="remember">Remember me</label>
+            <button id="login-button">Login</button>
+        </div>
+
+        <div id="social-signin" class="format">
+            <button id="facebook" class="social-signin">Sign in with facebook</button>
+            <button id="google" class="social-signin">Sign in with Google</button>
+        </div>
+    </section>
+</body>
+<script src="login.js"></script>
+</html>

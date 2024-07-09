@@ -1,0 +1,21 @@
+header {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.todo-count {
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+}

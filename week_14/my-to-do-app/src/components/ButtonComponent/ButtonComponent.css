@@ -1,0 +1,22 @@
+.clear-button {
+    background-color: red;
+}
+
+.add-button {
+    background-color: green;
+}
+
+.delete-button {
+    background-color: red;
+    width: 55px;
+}
+
+.done-button {
+    border: 1px solid black;
+    width: 90px;
+}
+
+.search-button {
+    background-color: grey;
+}
+

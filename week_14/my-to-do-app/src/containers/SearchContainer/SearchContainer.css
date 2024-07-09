@@ -1,0 +1,33 @@
+#search-button {
+    border: 1px black solid;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.search-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px black solid;
+    padding: 10px 0px;
+}
+
+.searched-task {
+    font-weight: bold;
+    flex:1;
+    min-width: 0px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}

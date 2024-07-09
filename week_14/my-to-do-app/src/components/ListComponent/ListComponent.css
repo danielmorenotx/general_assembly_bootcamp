@@ -1,0 +1,16 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-complete {
+    text-decoration: line-through;
+}
+
+.task p {
+    min-width: 0px;
+    flex: 1; /* take up 100% of given space */
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,304 @@
+
+/* ----- MOBILE AND SMALL TABLET SCREENS ----- */
+.off-screen-menu {
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+/* ----- formatting ----- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 360px;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.column-format {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button {
+    margin: 10px;
+    font-weight: bold;
+    margin: 5px;
+    background-color: aliceblue;
+    border:1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode,
+.dark-mode footer {
+    background: rgb(92, 91, 97);
+    color: aliceblue;
+}
+
+/* ----- header ----- */
+
+header {
+    border: black solid 2px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links {
+    display: none;
+}
+
+#account-info {
+    display: none
+}
+
+/* ----- hamburger menu ----- */
+.menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.btn-line {
+    width: 30px;
+    height: 3px;
+    background: #2b2a2a;
+    margin: 5px;
+}
+
+.nav-links.active {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+
+/* ----- post an article ----- */
+.article-title {
+    margin: 0;
+    margin-top: 50px;
+}
+
+.new-post {
+    width: 100%;
+    border: none;
+    margin: 5px;
+    color: gray;
+}
+
+#post-button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* ----- search article section ----- */
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sort-by {
+    margin-left: auto;
+}
+
+/* ----- article section ----- */
+article {
+    margin-right: auto;
+}
+
+
+/* ----- comments section ----- */
+.comments-section {
+    align-self: center;
+    width: 400px;
+}
+
+.comment-button {
+    padding: 10px;
+}
+
+.write-comment {
+    width: 100%;
+    color: black;
+}
+
+h5 {
+    margin: 0px;
+}
+
+.comment {
+    margin-top: 30px;
+}
+
+/* ----- non viewable on mobile ----- */
+#recipe-aside {
+    display: none;
+}
+
+.footer {
+    display: none;
+}
+
+
+/* ----- LARGE TABLET AND COPUTER SCREENS ----- */
+@media screen and (min-width: 768px) {
+    /* ----- formatting ----- */
+    #main-aside {
+        display: flex;
+        flex-direction: row;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* ----- header ----- */
+    header {
+        white-space: nowrap;
+        justify-content: space-around;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        max-width: 600px;
+    }
+
+    #account-info {
+        display: flex;
+        flex-direction: row;
+        min-width: 200px;
+        justify-content: space-between;
+    }
+
+    #greeting {
+        margin: auto;
+    }
+
+    #account-symbol {
+        width: 50px;
+    }
+
+    .light-switch {
+        position: fixed;
+    }
+
+    #light-label {
+        left: 32px;
+        margin-top: 2px;
+    }
+
+
+    /* ----- post an article ----- */
+    main {
+        width: 100%;
+        margin: 20px;
+        padding:20px
+    }
+
+    #post-button {
+        margin-left: auto;
+        width: 300px;
+    }
+
+    /* ----- article section ----- */
+    section {
+        align-items: center;
+    }
+
+    /* ----- comments section ----- */
+    .comments-section {
+        align-self: center;
+        max-width: 400px;
+    }
+
+    .write-comment {
+        justify-content: center;
+        width: 400px;
+    }
+
+    #comment-button {
+        margin-left: auto;
+    }
+
+    h5 {
+        margin-right: auto;
+        padding-top: 20px;
+    }
+
+    .comment-button {
+        padding: 10px;
+        align-self: flex-end;
+        margin-right: 135px;
+    }
+
+    .comment {
+        margin-left: 135px;
+    }
+
+    /* ----- aside section ----- */
+    #recipe-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        white-space: nowrap;
+        margin: 20px;
+        max-height: 800px;
+    }
+
+    #recipe-container {
+        border: black solid 2px;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+    }
+
+    #recipe-title {
+        max-width: 500px;
+    }
+
+    #recipe-picture {
+        width: 400px;
+    }
+
+    #get-recipe-button {
+        margin: 30px;
+    }
+    
+    /* ----- footer ----- */
+    .footer {
+        border: black solid 2px;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 98.8%;
+    }
+
+    /* ----- non viewable on desktop ----- */
+
+    .menu-btn {
+        display: none;
+    }
+}

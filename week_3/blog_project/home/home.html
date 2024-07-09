@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1><span class="first-line">Inclusive</span> <span class="second-line">Foods</span></h1>
+        
+        <nav class="nav-links">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">contact</a>
+        </nav>        
+        
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        
+        </nav>
+        <div id="account-info">
+            <div id="greeting">Hi, <span id="account-username"></span></div>
+            <img src="images/social-symbol.png" alt="user pic" id="account-symbol">
+        </div>
+    </header>
+    <input type="checkbox" id="light-switch" class="light-switch" name="light-switch">
+    <label for="light-switch" id="light-label" class="light-switch">Dark Mode</label>
+
+    <div id="main-aside">
+        <main>
+            <section class="column-format">
+                <textarea name="new-post" id="post-title" class="new-post" rows="1" placeholder="Title"></textarea>
+                <textarea name="post-body" id="post-body" class="new-post" rows="10" placeholder="New Post"></textarea>
+                <!-- <textarea name="post-tags" id="post-tags" class="new-post" rows="1">tags..</textarea> -->
+                <button id="post-button">post</button>
+            </section>
+            
+            <div id="search">
+                <input type="text" id="search-bar" name="search-bar" placeholder="Search articles...">
+                <select name="sort-by" id="sort-by">
+                    <option value="none">Sort by...</option>
+                    <option value="newest">Newest to oldest</option>
+                    <option value="oldest">Oldest to newest</option>
+                </select>    
+            </div>
+
+            <h2>Blog</h2>
+            <section id="blog-section" class="column-format">
+            <!--<article>
+                    <h2>Article Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eum exercitationem explicabo officia sed dolores, perspiciatis ipsa repellendus ipsam maiores fugiat esse deleniti fugit accusamus mollitia dolore nesciunt adipisci rem.
+                    Tempora, totam optio magnam eaque numquam voluptate cum omnis atque fugiat saepe at dolores ipsum consequatur dolore perspiciatis, amet aliquid ea laudantium necessitatibus maxime, sequi sed? Ullam eveniet itaque saepe!</p> 
+                </article> -->
+
+            <!--<section class="comments-section column-format">
+                    <textarea name="comment" class="write-comment" rows="2">New Comment</textarea>
+                    <button class="comment-button">Post Comment</button>
+                    <div class="posted-comments">
+                        <div class="comment">
+                            <h5>Commenter</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor reiciendis voluptas consequuntur iste aperiam repellendus atque vel magnam molestias animi, aliquid incidunt, officiis perferendis cumque consectetur adipisci laudantium odit sed!</p>
+                        </div>
+                    </div> 
+                </section> -->
+            </section>
+        </main>
+        
+        <aside id="recipe-aside" class="aside column-format">
+            <h3 id="daily-title">Recipe of the Day:</h3>
+        <!--<div id="recipe-container" class="column-format">
+                <h4>Recipe Title</h4>
+                <img src="recipeSourceUrl" alt="recipe picture">
+                <button id="get-recipe-button">Click here for recipe</button>
+            </div>-->
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <h3>Inclusive Foods</h3>
+        <h3>Made by: Daniel Moreno</h3>
+    </footer>
+</body>
+<script src="mock.js"></script>
+<script src="blog_post.js"></script>
+<script src="sorting.js"></script>
+<script src="comments.js"></script>
+<script src="recipe_api.js"></script>
+</html>
